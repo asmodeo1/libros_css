@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Biblioteca</title>
+    <style>
+      body {
+        /* El body por defecto tienen un margen que queremos quitar 
+            para que el header y el footer ocupe todo el ancho de la ventana*/
+        margin: 0;
+        background-color: lightgray;
+      }
+      header {
+        background-color: black;
+        background-image: url(fotos/biblioteca.png);
+        background-repeat: no-repeat;
+        /* Ponemos la imagen centrada verticalmente y a la derecha, dejando 20 píxeles
+            de espacio por la derecha */
+        background-position: center right 20px;
+      }
+      header h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: white;
+        padding: 20px;
+        /* Un h1 por defecto tiene un margen. Como esta dentro del header y este
+            no tiene un borde o padding, el margen superior e inferior del h1
+            se aplica fuera del header, no del h1. Por ello lo quitamos para que
+            no deje espacio por encima del header */
+        margin: 0;
+      }
+      .libro {
+        background-color: white;
+        box-shadow: 2px 2px 2px grey;
+        width: 60%;
+        /* Para evitar que las cajas sean muy anchas en monitores de mucha resolución */
+        max-width: 800px;
+        margin: 1em auto;
+        border-radius: 10px;
+        padding: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .libro img {
+        border-radius: 5px;
+      }
+      .libro h2 {
+        font-family: "Courier New", Courier, monospace;
+        border-bottom: 1px double grey;
+      }
+      .libro span {
+        font-weight: bold;
+      }
+      .precio {
+        background-color: bisque;
+        border: 1px solid black;
+        /* Poniéndole innline-block, ocupará solo su contenido en lugar de todo el ancho */
+        display: inline-block;
+        padding: 0.5em;
+      }
+      /* Ponemos en negrita el precio al pasar el ratón por encima */
+      .precio:hover {
+        font-weight: bold;
+      }
+
+      footer {
+        background-color: black;
+        text-align: center;
+        font-style: italic;
+        color: white;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mi Biblioteca</h1>
+    </header>
+    <main>
+      <section class="libro">
+        <img src="fotos/libro1.jpg" alt="Portada de La niebla de los bosques" />
+        <h2>La niebla de los bosques</h2>
+        <p><span>Autor:</span>J. García</p>
+        <p><span>Año:</span>2023</p>
+        <p>
+          <span>Descripción:</span>Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Architecto nemo quibusdam tempore necessitatibus
+          voluptatibus et quaerat quis velit dolore deleniti, voluptatum eius
+          vel placeat pariatur minus omnis sed modi magnam! Animi quaerat
+          suscipit rem cupiditate, autem consequuntur? Labore, quos. Repellat
+          voluptates at vitae maxime expedita saepe distinctio alias harum fugit
+          doloribus ea pariatur, eligendi illum fugiat! Nesciunt sint
+          repudiandae esse tempora iste, debitis corporis soluta delectus alias!
+          Distinctio numquam consequuntur iusto magnam hic necessitatibus
+          reprehenderit voluptas a nulla deserunt quibusdam saepe tempora, quis
+          ab dolores, inventore maiores sunt iure illum odit. Totam tenetur
+          architecto sed commodi cumque odio repudiandae illo?
+        </p>
+        <p class="precio">Precio: 17 €</p>
+      </section>
+      <section class="libro">
+        <img src="fotos/libro2.jpg" alt="Portada de La niebla de los bosques" />
+        <h2>La niebla de los bosques</h2>
+        <p><span>Autor:</span>J. García</p>
+        <p><span>Año:</span>2023</p>
+        <p>
+          <span>Descripción:</span>Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Architecto nemo quibusdam tempore necessitatibus
+          voluptatibus et quaerat quis velit dolore deleniti, voluptatum eius
+          vel placeat pariatur minus omnis sed modi magnam! Animi quaerat
+          suscipit rem cupiditate, autem consequuntur? Labore, quos. Repellat
+          voluptates at vitae maxime expedita saepe distinctio alias harum fugit
+          doloribus ea pariatur, eligendi illum fugiat! Nesciunt sint
+          repudiandae esse tempora iste, debitis corporis soluta delectus alias!
+          Distinctio numquam consequuntur iusto magnam hic necessitatibus
+          reprehenderit voluptas a nulla deserunt quibusdam saepe tempora, quis
+          ab dolores, inventore maiores sunt iure illum odit. Totam tenetur
+          architecto sed commodi cumque odio repudiandae illo?
+        </p>
+        <p class="precio">Precio: 17 €</p>
+      </section>
+      <section class="libro">
+        <img src="fotos/libro3.jpg" alt="Portada de La niebla de los bosques" />
+        <h2>La niebla de los bosques</h2>
+        <p><span>Autor:</span>J. García</p>
+        <p><span>Año:</span>2023</p>
+        <p>
+          <span>Descripción:</span>Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Architecto nemo quibusdam tempore necessitatibus
+          voluptatibus et quaerat quis velit dolore deleniti, voluptatum eius
+          vel placeat pariatur minus omnis sed modi magnam! Animi quaerat
+          suscipit rem cupiditate, autem consequuntur? Labore, quos. Repellat
+          voluptates at vitae maxime expedita saepe distinctio alias harum fugit
+          doloribus ea pariatur, eligendi illum fugiat! Nesciunt sint
+          repudiandae esse tempora iste, debitis corporis soluta delectus alias!
+          Distinctio numquam consequuntur iusto magnam hic necessitatibus
+          reprehenderit voluptas a nulla deserunt quibusdam saepe tempora, quis
+          ab dolores, inventore maiores sunt iure illum odit. Totam tenetur
+          architecto sed commodi cumque odio repudiandae illo?
+        </p>
+        <p class="precio">Precio: 17 €</p>
+      </section>
+    </main>
+    <footer>
+      <address>
+        <p>C/Gran Vía, 125, entresuelo</p>
+        <p>36208 - Vigo</p>
+      </address>
+    </footer>
+  </body>
+</html>
